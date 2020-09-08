@@ -1,0 +1,94 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100vw;
+    padding: 1em;
+    text-align:center;
+}
+.heading {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.section-container{
+  width: 100%;
+  margin: auto;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+  background: gray;
+  margin:10px;
+  width:100%;
+  border: 1px solid black;
+  border-radius: 5px;
+ 
+}
+
+.section-1 h3 {
+  background: red;
+  display: inline;
+  float: right;
+  margin: 0;
+  padding:8px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.section-1 p {
+ 
+    margin-left: 8px;
+       clear: right;
+}
+
+.section-2 h3 {
+  background: palegreen;
+  display: inline;
+  float: right;
+  margin: 0;
+  padding:8px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.section-2 p {
+  clear: right;
+  margin-top:15px;
+  margin-left: 8px;
+}
+
+.section-3 h3 {
+  background: blueviolet;
+  display: inline;
+  float: right;
+  margin: 0;
+  padding:8px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.section-3 p {
+    margin-left: 8px;
+    clear: right;
+}
+
+@media (min-width:768px) and (max-width:991px){ 
+    .section-1, .section-2{
+        width: 45%;
+        float: left;
+        display: inline;
+
+    }
+    .section-3{
+        clear: left;
+        width:93%;
+    }
+}
+
+@media (min-width:992px){
+    .section-1, .section-2, .section-3{
+        width:30%;
+        float: left;
+    }
+}
